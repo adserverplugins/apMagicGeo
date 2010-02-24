@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<plugin>
+    <name>apMagicGeo</name>
+    <creationDate>2001-01-07</creationDate>
+    <author>AdserverPlugins.com</author>
+    <authorEmail>info@adserverplugins.com</authorEmail>
+    <authorUrl>http://www.adserverplugins.com/</authorUrl>
+    <license><![CDATA[
+        <a href="http://www.adserverplugins.com/eula">EULA</a>
+    ]]></license>
+    <description>Magic tags for Geotargeting</description>
+    <version>0.9.2-beta</version>
+    <oxversion>2.8.0</oxversion>
+    <extends>deliveryAdRender</extends>
+    <install>
+
+        <syscheck>
+            <depends>
+                <plugin version="1.0.2" enabled="1">Geo</plugin>
+            </depends>
+        </syscheck>
+        
+        <files>
+            <file path="{MODULEPATH}deliveryAdRender/apMagicGeo/">apMagicGeo.delivery.php</file>
+        </files>
+
+        <components>
+            <component>
+                <name>apMagicGeo</name>
+                <hook>postAdRender</hook>
+            </component>
+        </components>
+
+    </install>
+</plugin>
