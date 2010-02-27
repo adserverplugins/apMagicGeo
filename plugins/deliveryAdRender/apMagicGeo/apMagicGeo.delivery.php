@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * apMagicGeo for the OpenX ad server
+ *
+ * @author Matteo Beccati
+ * @copyright 2010 AdserverPlugins.com - All rights reserved
+ *
+ * $Id$
+ */
+
 function Plugin_deliveryAdRender_apMagicGeo_apMagicGeo_Delivery_postAdRender(&$code, $aBanner)
 {
     $oMagic = new AP_MagicGeo();
