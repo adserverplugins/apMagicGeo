@@ -77,7 +77,7 @@ class AP_MagicGeo
 
     private function getResPath($fName)
     {
-        return MAX_PATH.$GLOBALS['_MAX']['CONF']['pluginPaths']['plugins'].'/deliveryLimitations/Geo/Data/'.$fName;
+        return MAX_PATH.$GLOBALS['_MAX']['CONF']['pluginPaths']['plugins'].'/deliveryLimitations/Geo/data/'.$fName;
     }
 
     protected function getContinentCode()
