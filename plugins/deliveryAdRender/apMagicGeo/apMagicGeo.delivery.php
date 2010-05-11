@@ -21,11 +21,12 @@ class AP_MagicGeo
     protected $aData;
 
     private $aVariables = array(
+        'continent_code' => 'getContinentCode',
         'continent'      => 'getContinent',
         'country_code'   => false,
         'country'        => 'getCountry',
         'region_code'    => 'getRegionCode',
-        'region'         => 'getCountry',
+        'region'         => 'getRegion',
         'city'           => false,
         'postal_code'    => false,
         'latitude'       => false,
@@ -77,6 +78,15 @@ class AP_MagicGeo
     private function getResPath($fName)
     {
         return MAX_PATH.$GLOBALS['_MAX']['CONF']['pluginPaths']['plugins'].'/deliveryLimitations/Geo/Data/'.$fName;
+    }
+
+    protected function getContinentCode()
+    {
+        include $this->getResPath('res-continent.inc.php');
+        if (!empty($this->aData['country_code']) && isset($OA_Geo_continent[$this->aData['country_code']])) {
+            return $OA_Geo_continent[$this->aData['country_code']];
+        }
+        return '';
     }
 
     protected function getContinent()
