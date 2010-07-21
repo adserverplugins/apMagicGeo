@@ -1,0 +1,22 @@
+
+apMagicGeo
+==========
+The Geolocation Magic Macros plugin for OpenX, Magic Geo in short, enables you
+to dynamically insert the name of the geographic location of a visitor into a
+banner. This can be used in both the HTML code and the destination URL. Using
+this new feature, you can automatically make a banner adjust its content to the
+location of a visitor.
+
+Licence
+=======
+This plugin has been released under the Creative Commons Attribution-NoDerivs
+licence, version 3.0 Unported. Human readable summary and full legal code are
+available at:
+
+http://creativecommons.org/licenses/by-nd/3.0/
+
+Change Log
+==========
+
+v0.9.9-beta:
+    * First public release
