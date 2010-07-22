@@ -17,7 +17,7 @@
     <install>
 
         <files>
-            <file path="{PLUGINPATH}">apStatsGraphs.readme.txt</file>
+            <file path="{PLUGINPATH}">apMagicGeo.readme.txt</file>
         </files>
 
         <contents>
