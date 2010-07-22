@@ -15,11 +15,15 @@
     <oxversion>2.8.0</oxversion>
     <type>extension</type>
     <install>
+
         <files>
+            <file path="{PLUGINPATH}">apStatsGraphs.readme.txt</file>
         </files>
+
         <contents>
             <group name="apMagicGeo">1</group>
         </contents>
+
     </install>
     <readme>
     </readme>
