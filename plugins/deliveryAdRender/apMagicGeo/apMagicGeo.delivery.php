@@ -49,7 +49,7 @@ class AP_MagicGeo
 
     public function convert($code)
     {
-        if (!empty($code) && preg_match_all('#\{geo\.([a-z_]+?)(_enc)?\}#', $code, $aMatches)) {
+        if (!empty($code) && preg_match_all('#\{geo\.([a-z_]+?)(\.enc)?\}#', $code, $aMatches)) {
             $aReplace = array();
             foreach ($aMatches[1] as $k => $v) {
                 if (isset($this->aVariables[$v])) {
