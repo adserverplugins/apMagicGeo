@@ -3,7 +3,7 @@
 
 <plugin>
     <name>apMagicGeo</name>
-    <creationDate>2001-07-23</creationDate>
+    <creationDate>2010-12-13</creationDate>
     <author>AdserverPlugins.com</author>
     <authorEmail>info@adserverplugins.com</authorEmail>
     <authorUrl>http://www.adserverplugins.com/openx/free-plugins-for-openx-ad-server/magic-geo-macros/</authorUrl>
@@ -11,7 +11,7 @@
         <a href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution-No Derivative Works 3.0 Unported</a>
     ]]></license>
     <description>Geolocation Magic Macros</description>
-    <version>0.9.9-beta</version>
+    <version>1.0.0</version>
     <oxversion>2.8.0</oxversion>
     <extends>deliveryAdRender</extends>
     <install>

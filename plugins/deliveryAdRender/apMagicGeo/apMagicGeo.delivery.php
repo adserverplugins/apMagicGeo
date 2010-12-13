@@ -33,6 +33,8 @@ class AP_MagicGeo
         'longitude'      => false,
         'dma'            => 'getDMA',
         'dma_code'       => false,
+        'us_metro'       => 'getDMA',
+        'us_metro_code'  => 'getDMACode',
         'area_code'      => false,
         'organisation'   => false,
         'isp'            => false,
@@ -147,6 +149,14 @@ class AP_MagicGeo
         include $this->getResPath('res-dmacodes.inc.php');
         if (!empty($this->aData['dma_code']) && isset($OA_Geo_DmaCodes[$this->aData['dma_code']])) {
             return $OA_Geo_DmaCodes[$this->aData['dma_code']];
+        }
+        return '';
+    }
+
+    protected function getDMACode()
+    {
+        if (!empty($this->aData['dma_code']) && isset($OA_Geo_DmaCodes[$this->aData['dma_code']])) {
+            return $this->aData['dma_code'];
         }
         return '';
     }
