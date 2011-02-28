@@ -4,7 +4,7 @@
  * apMagicGeo for the OpenX ad server
  *
  * @author Matteo Beccati
- * @copyright 2010 AdserverPlugins.com - All rights reserved
+ * @copyright 2010-2011 AdserverPlugins.com - All rights reserved
  *
  * $Id$
  */
