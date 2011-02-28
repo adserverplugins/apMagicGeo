@@ -20,6 +20,8 @@ Change Log
 
 v1.0.0
     * Fixed debug.log warnings during delivery of banners with no magic macros
+    * Added {geo.us_metro} and {geo.us_metro_code}
+    * Deprecated {geo.dma} and {geo.dma_code}
 
 v0.9.9-beta:
     * First public release
