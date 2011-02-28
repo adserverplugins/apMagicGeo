@@ -59,17 +59,17 @@ class AP_MagicGeo
                     $aReplace[$v][$enc] = $aMatches[0][$k];
                 }
             }
-        }
-        foreach ($aReplace as $name => $aVariants) {
-            if ($this->aVariables[$name]) {
-                $text = $this->{$this->aVariables[$name]}();
-            } else {
-                $text = empty($this->aData[$name]) ? '' : $this->aData[$name];
-            }
-            for ($enc = 0; $enc <= 1; $enc++) {
-                if (isset($aVariants[$enc])) {
-                    $text = $enc ? urlencode($text) : $text;
-                    $code = str_replace($aVariants[$enc], $text, $code);
+            foreach ($aReplace as $name => $aVariants) {
+                if ($this->aVariables[$name]) {
+                    $text = $this->{$this->aVariables[$name]}();
+                } else {
+                    $text = empty($this->aData[$name]) ? '' : $this->aData[$name];
+                }
+                for ($enc = 0; $enc <= 1; $enc++) {
+                    if (isset($aVariants[$enc])) {
+                        $text = $enc ? urlencode($text) : $text;
+                        $code = str_replace($aVariants[$enc], $text, $code);
+                    }
                 }
             }
         }
