@@ -155,9 +155,6 @@ class AP_MagicGeo
 
     protected function getDMACode()
     {
-        if (!empty($this->aData['dma_code']) && isset($OA_Geo_DmaCodes[$this->aData['dma_code']])) {
-            return $this->aData['dma_code'];
-        }
-        return '';
+        return empty($this->aData['dma_code']) ? '' : $this->aData['dma_code'];
     }
 }
